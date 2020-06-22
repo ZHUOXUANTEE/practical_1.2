@@ -47,4 +47,6 @@ public class MainActivity extends AppCompatActivity {
         msgBtn = findViewById(R.id.msgBtn);
         resultText = findViewById(R.id.resultText);
     }
+
+    //test
 }
