@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
                 int x = Integer.parseInt(resultText.getText().toString());
 
                 x++;
-
+                if(resultText != null)
                 resultText.setText(String.valueOf(x));
             }
         });
