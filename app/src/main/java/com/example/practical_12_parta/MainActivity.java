@@ -48,5 +48,4 @@ public class MainActivity extends AppCompatActivity {
         resultText = findViewById(R.id.resultText);
     }
 
-    //test
 }
