@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         msgBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"TEE ZHUO XUAN 19WMD00612",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),R.string.toast_message,Toast.LENGTH_SHORT).show();
             }
         });
 
