@@ -1,7 +1,10 @@
 package com.example.practical_12_parta;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -11,7 +14,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
 
-    private Button countBtn,msgBtn;
+    private Button countBtn,msgBtn,resetBtn;
     private TextView resultText;
 
     @Override
@@ -29,15 +32,23 @@ public class MainActivity extends AppCompatActivity {
         });
 
         countBtn.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.M)
             @Override
             public void onClick(View v) {
                 int x = Integer.parseInt(resultText.getText().toString());
-
                 x++;
                 if(resultText != null)
                 resultText.setText(String.valueOf(x));
+                resetBtn.setBackgroundColor(getColor(R.color.colorPink));
             }
         });
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.M)
+    public void reset(View v)
+    {
+        resetBtn.setBackgroundColor(getColor(R.color.colorGray));
+        resultText.setText("0");
     }
 
 
@@ -46,6 +57,8 @@ public class MainActivity extends AppCompatActivity {
         countBtn = findViewById(R.id.countBtn);
         msgBtn = findViewById(R.id.msgBtn);
         resultText = findViewById(R.id.resultText);
+        resetBtn = findViewById(R.id.resetbtn);
     }
 
 }
+                //resultText.setTextColor(Color.rgb(128, 128, 128));
