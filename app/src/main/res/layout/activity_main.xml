@@ -45,7 +45,7 @@
 
     <TextView
         android:id="@+id/resultText"
-        android:layout_width="296dp"
+        android:layout_width="0dp"
         android:layout_height="271dp"
         android:layout_marginStart="10dp"
         android:layout_marginLeft="10dp"
