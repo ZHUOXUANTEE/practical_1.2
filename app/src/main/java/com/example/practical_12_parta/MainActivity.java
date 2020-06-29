@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         resultText.setText("0");
     }
 
-//oiiiiii
+
 
     private void initializeUI() {
         countBtn = findViewById(R.id.countBtn);
@@ -62,3 +62,4 @@ public class MainActivity extends AppCompatActivity {
 
 }
                 //resultText.setTextColor(Color.rgb(128, 128, 128));
+//test
