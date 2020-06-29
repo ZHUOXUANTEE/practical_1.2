@@ -8,7 +8,7 @@
 
     <Button
         android:id="@+id/resetbtn"
-        android:layout_width="265dp"
+        android:layout_width="199dp"
         android:layout_height="wrap_content"
         android:background="@color/colorGray"
         android:onClick="reset"
@@ -19,7 +19,7 @@
 
     <Button
         android:id="@+id/msgBtn"
-        android:layout_width="265dp"
+        android:layout_width="198dp"
         android:layout_height="80dp"
         android:background="?attr/colorPrimary"
         android:text="TOAST"
@@ -29,7 +29,7 @@
 
     <Button
         android:id="@+id/countBtn"
-        android:layout_width="266dp"
+        android:layout_width="199dp"
         android:layout_height="80dp"
         android:background="?attr/colorPrimary"
         android:paddingBottom="5dp"
@@ -41,14 +41,18 @@
     <TextView
         android:id="@+id/resultText"
         android:layout_width="match_parent"
-        android:layout_height="1206dp"
+        android:layout_height="0dp"
         android:background="#F5FD02"
         android:gravity="center_horizontal|center_vertical"
         android:text="0"
         android:textColor="?attr/colorPrimary"
         android:textSize="200sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/countBtn"
-        tools:layout_editor_absoluteX="-5dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/msgBtn"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

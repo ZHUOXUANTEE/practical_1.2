@@ -10,43 +10,43 @@
         android:id="@+id/countBtn"
         android:layout_width="102dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="52dp"
         android:background="?attr/colorPrimary"
         android:text="COUNT"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/resetbtn" />
 
     <Button
+        android:id="@+id/msgBtn"
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="24dp"
+        android:background="?attr/colorPrimary"
+        android:text="TOAST"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
         android:id="@+id/resetbtn"
         android:layout_width="102dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="52dp"
         android:background="@color/colorGray"
         android:onClick="reset"
         android:text="@string/btnReset"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/msgBtn" />
 
-    <Button
-        android:id="@+id/msgBtn"
-        android:layout_width="102dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="20dp"
-        android:background="?attr/colorPrimary"
-        android:text="TOAST"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
         android:id="@+id/resultText"
         android:layout_width="566dp"
-        android:layout_height="355dp"
+        android:layout_height="0dp"
         android:background="#F5FD02"
         android:gravity="center_horizontal|center_vertical"
         android:onClick="reset"
